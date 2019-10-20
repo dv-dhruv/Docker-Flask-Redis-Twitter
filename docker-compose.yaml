@@ -1,0 +1,8 @@
+version: '3'
+services:
+        redis-server:
+                image: 'redis'
+        retwis-flask:
+                build: .
+                ports: 
+                - "4000:5000"
